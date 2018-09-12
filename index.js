@@ -6,7 +6,6 @@ const newLineChar = process.platform === 'win32' ? '\r\n' : '\n';
 
 
 fs.appendFileSync('text.txt', `${newLineChar}${data_to_append}`);
-fs.readFileSync('text.txt', 'utf8');
 var content = fs.readFileSync('text.txt', 'utf8');
 console.log(content);
 
